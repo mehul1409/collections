@@ -1,0 +1,34 @@
+.test{
+    font-family:unquote(Arial);
+}
+
+$selector : selector-nest("ul","li");
+$selector : selector-nest(".abc , .xyz","p");
+
+#{$selector}{
+    width:10px;
+}
+
+.div1,.div2{
+    height:150px;
+    width:150px;
+    background-color: red;
+}
+
+.div1{
+    position:absolute;
+    top:75px;
+    left:75px;
+    z-index:3;
+}
+
+.div2{
+    background-color: green;
+    z-index:1;
+}
+
+$list : 10;
+
+.test{
+    padding:variable-exists(list);
+}

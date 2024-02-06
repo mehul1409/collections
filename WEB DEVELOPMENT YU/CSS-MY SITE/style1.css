@@ -1,0 +1,25 @@
+body{
+    background-color: #add8e6;
+}
+.top-container{
+    background-color: red;
+    width:100px;
+    height:100px;
+    position:relative;
+    left:200px;
+}
+.middle-container{
+    background-color: blue;
+    width:100px;
+    height:100px;
+    position:relative;
+    bottom:100px;
+}
+.bottom-container{
+    background-color:yellow;
+    width:100px;
+    height:100px;
+    position:relative;
+    bottom:200px;
+    left:100px;
+}

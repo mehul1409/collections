@@ -1,0 +1,5 @@
+h2{
+    color:$h2-color;
+    @include height(400px);
+    background-color: aquamarine;
+}

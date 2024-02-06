@@ -1,0 +1,13 @@
+$width:200px;
+
+@function width($value){
+    @return ($value/2);
+}
+
+div{
+    color:blue;
+    width:width($width);
+    @include height(200px);
+    background-color: $bg-color;
+}
+

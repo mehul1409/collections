@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .btn{
+        @apply bg-purple-900 text-white m-10 rounded-full px-4 py-2 text-xl;
+    }
+}

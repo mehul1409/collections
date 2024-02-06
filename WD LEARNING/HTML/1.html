@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TUTORIAL</title>
+</head>
+<body>
+    
+    <p><h1>WE ARE GOING TO IMPLEMENT CSS FROM HERE:-</h1></p>
+
+    <p>paragraph tag</p>
+
+    <hr>
+
+    <b>to bold the text</b><br><br>
+
+    <strong>to blod the text and to identify the text as important</strong><br><br>
+
+    <i>ti give italic style</i><br><br>
+
+    <u>to underline the text</u><br><br>
+
+    <mark>to highlight some text</mark><br><br>
+
+    <del>to strikethrough the text</del>
+
+    <p>to comment out the text,select the text and then press key (ctrl+question mark key)</p><br>
+
+    <h1>HEADING TAG</h1>
+    <h2>HEADING TAG</h2>
+    <h3>HEADING TAG</h3>
+    <h4>HEADING TAG</h4>
+    <h5>HEADING TAG</h5>
+    <h6>HEADING TAG</h6>
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum perferendis sequi sint corrupti impedit similique culpa eveniet commodi laborum, magnam nobis blanditiis corporis officiis natus sit assumenda doloremque labore ut asperiores cum nulla. Ex?
+    <p>NOTE:-if you want to write line  by line use toggle word wrap</p>
+
+    <h3><u>WEB DEVELOPMENT REQUIREMENTS:-</u></h3>
+    <ol>
+        <li>FRONTEND</li>
+        <ul>
+            <li>HTML</li>
+            <ul>
+                <li>HTML 5</li>
+            </ul>
+            <li>CSS</li>
+            <ul>
+                <li>CSS 3</li>
+                <li>BOOTSPRAP</li>
+                <li>JAVASCRIPT</li>
+                <li>JQUERY</li>
+            </ul>
+        </ul><br>
+        <li>BACKEND</li>
+        <ul>
+            <li>PHP</li>
+            <li>DATABASE</li>
+            <li>AJAX</li>
+        </ul>
+    </ol>
+
+    <img src="/41e3YGKg-3L.jpg" title="NOTEBOOK" alt="notebook" height="30" width="30">
+    <br>
+
+        <!-- src = from where you want to show picture(basically address)<br>
+        tittle = it shows the text when you take cursor to the image<br>
+        alt = it display the text when your image doesnt load in the browser<br>
+        and then height and width we know what is this -->
+
+    <a href="/HTML/hello.html" target="_blank">MY FIRST HTML CODE</a>
+    <br><br>
+    <!-- a for anchoe tag -->
+
+    <center> a+b </center>
+
+    <h1>H <sup>2</sup> O</h1>
+    <h1>H <sup>2<sup>3</sup></sup> O</h1> 
+
+    <h1>H <sub>2</sub> O</h1>
+
+    <meter min="0" max="100" value="70"></meter><br><br>
+
+    <!-- the table is used to show some data which are related to each other -->
+    <!-- <thead></thead>is used to define the header of the 
+    <tbody></tbody> is used to define the body of the data
+    <tr></tr>is used to define a new row of the table
+    <th></th> is used to define show the heading of each column inside the table row
+    <td></td>is used to show the data inside the table row(<tr>) -->
+
+        <!-- table attributes
+         1)table
+         bgcolor,align,border,cellpadding,cellspacing(sapce between the cells),width,height
+         2)tr 
+         bgcolor,align
+         3)th or td
+         bgcolor,rowspan(merge two row),colspan(merge two column) -->
+
+        <table border="2" align="center">
+            <thead>
+                <tr>
+                    <td>S.NO.</td>
+                    <td>NAME</td>
+                    <td>ENROLLMENT NUMBER</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>MEHUL BASNAL</td>
+                    <td>22103048</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>RAM</td>
+                    <td>22103099</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>SHAYAM</td>
+                    <td>22013045</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <!-- fielsset are define inside the form tag it basically make a container for our form as shown in figure and legend tag beautify our form  -->
+
+        <h2>ENQUIRY:-</h2>
+        <form action="backend.php">
+            <fieldset>
+                <legend>ENQUIRY</legend>
+            Name:<input type="text" placeholder="ENTER NAME HERE" required="" ><br><br>  <!--text = small area -->
+            Adress:<input type="textarea" maxlength="20"><br><br> <!--textarea = big box-->
+            Gender:
+            MALE<input type="radio" value="m" name="gender">
+            FEMALE<input type="radio" value="f" name="gender">
+            OTHER<input type="radio" value="o" name="gender"><br><br>
+            COUNTRY:<select>
+                <option>please select the country</option>
+                <optgroup label="ASIA">
+                <option value="india">india</option>
+                <option value="srilanka">sri lanka</option>
+                </optgroup>
+                <option value="usa">usa</option>
+            </select><br><br>
+            HOBBIES:Dancing<input type="checkbox" name="HOBBY[]">
+            singing<input type="checkbox" name="HOBBY[]">
+            Studying<input type="checkbox" name="HOBBY[]">
+            <br><br>
+            IMAGE:<input type="file" name="image"><br><br>
+            <input type="submit" value="submit">
+            <input type="reset">
+        </fieldset>
+        </form>
+        <br>
+        <br>
+
+        <form action="something.extension">
+            <fieldset>
+                <legend>HTML 5</legend>
+                COLOR:<input type="color" name="color"><br><br>
+                EMAIL:<input type="email" name="email"><br><br>
+                PASSWORD:<input type="password" name="password"><br><br>
+                NUMBER:<input type="number" name="age" autofocus="" min="1" max="25"><br><br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <br><br>
+
+        <form>
+            <fieldset>
+                <legend>CALENDER</legend>
+                DATE:<input type="date" value="date" autofocus=""><br><br>
+                TIME:<input type="time" value="time"><br><br>
+                DATE TIME:<input type="datetime-local" value="local"><br><br>
+                MONTH:<input type="month" value="month"><br><br>
+                WEEK:<input type="week" value="week"><br><br>
+                RANGE:<input type="range" min="0" max="200"><br><br>
+                SUBMIT:<input type="submit">
+            </fieldset>
+        </form>
+        <br><br>
+
+        <!--   div tag in html
+       1)the div tag is known as division tag
+       2)the div tag is used to used in html to make divisions of content in the web page like(text,images,header,footer,etc.)
+       3)the div tag has both open and closing tag and it is mandatory to close the tag
+       4) the div tag aquires the complete horizonal line
+        -->
+
+        <div>
+            <div>
+                <div>Home</div>
+                <div>Room</div>
+            </div>
+            <div>
+                <div>Furniture</div>
+                <div>Gallery</div>
+            </div>
+        </div>
+</body>
+</html>

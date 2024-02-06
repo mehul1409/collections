@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 1. select html element
+    2. perform jquery function. or action selected element -->
+
+    <!-- $() => selector syntax -->
+    <!-- $(selector).action(); => jquery syntax -->
+
+    <!-- $("#para").hide();  => jqery example -->
+
+    <!-- $(document).ready(()=>{
+        // jo bhi function call karna hai      //yha function tab kaam mai aata hai jab script tab head section mai ho or pura document padhane ke baad app vo function ko work karana chaho  
+      }); -->
+    
+    <p id="para1">This is para 1</p>
+    <p class="para2">This is para 2</p>
+    <p class="para2">This is para 3</p>
+    <a href="">Link</a>
+    <br><br>
+    <button id="btn">button1</button>
+    <br><br>
+    <button id="btn1">button2</button>
+    <br><br>
+    <button id="btn2">button3</button>
+    <br><br>
+    <div id="colored-div" style="background-color: aqua; height:100px; width:100px;">
+        <p>
+            this is a div
+            <a href="#" id="anchortag" class="anchor">anchor</a>
+        </p>
+    </div>
+    <br>
+    <input type="text" id="input1">
+
+    <script>
+        // $("p").hide();
+
+        // $("*").hide();  // * is use to select all the elements of the page
+
+        // $("#btn").click(function(){
+        //     $("#para1").hide();
+        // });
+
+        // $("#btn").click(function(){
+        //     $(this).hide();              //this is also a important variable in jquery here this means own
+        // });
+
+        // $("#btn").dblclick();  //for double click
+        // $(selector).mouseenter();
+        // $(selector).mouseleave();
+
+        // $("#colored-div").hover(()=>{
+        //     $("#para1").hide();
+        // },
+        // function(){                     // in hover function we have to give two function one when the mouse is enter and second for mouse leave
+        //     $("#para1").show();
+        // });
+
+        // $("#colored-div").on({
+        //     click: function(){
+        //         $(this).css("background-color","red");
+        //     },
+        //     mouseenter: function(){
+        //     $(this).css("background-color","green");    // on is use for applying multiple function on a selected element
+        // },
+        //     mouseleave: function(){
+        //         $(this).css("background-color","yellow");
+        //     }
+        // });
+
+        //parameters of hide or fadeOut and show or fadeIn function below are time in milisecond means in how much time you want to add or remove the effect of the fuction
+        // $("#btn1").click(function () {
+        //     $("#colored-div").fadeIn(2000);
+        // });
+        // $("#btn").click(function () {
+        //     $("#colored-div").fadeOut(3000);
+        // });
+        // "fade" refers to a visual effect where an element gradually becomes more transparent, eventually becoming invisible or barely visible
+        // fadeToggle can do both the work of fadeIn and fadeOut
+        // fadeTo is use whn we want to applied the opacity in our effects
+        // slideUp isse uper hoga jitna hamne duration diya hai
+        // slideDown isse down hoga jitna hamne duration diya hai
+        // slideToggle is for both up and down
+
+        // these all above function are used for visible or non visible of any element ☝️☝️
+
+        // $("#btn2").click(function(){
+        //     $("#colored-div").animate({
+        //         opacity:'0.5',
+        //         height:'200px',
+        //         width:'80vw'
+        //     });
+        // } , time );
+
+        // we can also use stop() function yha action ko rokh dega jo bhi hamne select kar rakha hai usse
+
+        // $("#btn").click(()=>{
+        //     $("#colored-div").hide(3000,function(){
+        //         alert("div hidden successfully");       //hame callback function use karna hai agear koi action complete hone ke baad koi or action karna hai toh this is also known as chaining
+        //     });
+        // });
+
+        // $("#btn1").click(function() {
+        //     $("#colored-div").css("background-color","pink").slideUp(2000).slideDown(5000);     // this is the syntax of chaining
+        // });
+
+        // $("#btn1").click(function(){
+        //    let text =  $("#colored-div").text();
+        //    alert(text);
+        // });
+
+        //text() function is used to fetch text from an html tag
+        //html() function is used to fetch complete text also the tags used inside that element
+        // html() also used to change the html or we can set text by this
+
+        // $("#btn1").click(function(){
+        //     $("#colored-div").html("heading");
+        // });
+
+        // agar kisi input text se data fetch karna hai toh hame val() function use karna hota hai
+
+        // $("#btn1").click(function(){
+        //     var input1value = $("#input1").val();
+        //     alert(input1value);
+        // });
+
+        // $("#btn1").click(function(){
+        //     $("#anchortag").attr({
+        //         "class":"anchortag",
+        //         "href":"#anchortag"
+        //     });
+        // });
+
+    </script>
+</body>
+
+</html>

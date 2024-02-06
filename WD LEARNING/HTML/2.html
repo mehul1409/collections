@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TUTORIAL</title>
+    <style>
+       .main{
+        background-color: aqua;
+        height:300px;
+        width:300px;
+       }
+       #parent1{
+        height:150px;
+        width:300px;
+        background-color:lightcoral;
+       }
+       #parent2{
+        height:150px;
+        width:300px;
+        background-color:lightgreen;
+       }
+       .col1{
+        height:150px;
+        width:150px;
+        background-color:lightseagreen;
+        float:right;
+       }
+       .col2{
+        height:150px;
+        width:150px;
+        background-color:lightsalmon;
+        float:left;
+       }
+       hr{
+        border-color: black;
+       }
+       .text{
+        height:200px;
+        width:200px;
+        background-color:blue;
+        font-size:50px;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+       }
+       .lorem{
+        height:400px;
+        width:800px;
+        background-color:red;
+        font-size:30px;
+        color: white;
+        text-align:center;
+        text-decoration:underline;
+        text-transform: uppercase;
+        word-spacing: 10px;
+        letter-spacing: 2px;
+       }
+    </style>
+</head>
+<body>
+    <p><h1>WE ARE GOING TO IMPLEMENT CSS FROM HERE:-</h1></p>
+    <!-- in this we can deal witih only internal css -->
+     <!-- <p><h1>WE ARE GOING TO IMPLEMENT CSS FROM HERE:-</h1></p> -->
+
+        <div class="text">
+            Hii, I am Mehul Bansal
+        </div>
+        <br>
+
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores nulla, vero unde consectetur voluptas quisquam quia ab ad enim officiis doloremque quo incidunt! Alias eveniet cupiditate aspernatur illum inventore harum iusto ullam reprehenderit architecto, doloremque dolorem. Distinctio, consequatur eius quas repellat exercitationem, quam tempore asperiores saepe doloribus quos ex.</p><br>
+
+        <div class="main">              <!-- MAIN DIV-->
+            <div id="parent1">          <!--PARENT ROW 1-->
+                <div class="col1">      <!--COLUMN 1-->
+                    Home
+                </div>
+                <div class="col2">      <!--COLUMN 2-->
+                    Room
+                </div>
+            </div>
+            <hr>         
+            <div id="parent2">          <!--PARENT ROW 2-->
+                <div class="col1">      <!--COLUMN 2-->
+                    Furniture
+                </div>
+                <div class="col2">      <!--COLUMN 2-->
+                    Gallery
+                </div>
+            </div>
+        </div>
+</body>
+</html>

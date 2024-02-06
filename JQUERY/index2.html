@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- before -->
+    <ul id="list">
+        <!-- prepend -->
+        <li>red</li>
+        <li>black</li>
+        <li>green</li>
+        <!-- append -->
+    </ul>
+    <!-- after -->
+    <br>
+
+    <div id="box" class="box red"></div><br>
+    <button id="btn">button</button>
+
+    <ul> <!--grandparent-->
+        <li> <!--parent-->
+            <span id="span1">item 1</span> <!--child--> <!--both li are siblings of each other-->
+        </li>
+        <li> <!--parent-->
+            <span id="span2">item 2</span>
+            <br>
+            <span id="span3">item 3</span>
+        </li>
+    </ul>
+
+    <p id="para">this is a p tag</p>
+    <button id="btn1">click me</button>
+
+    <script>
+        // $("#list").append("<li>yellow</li>");
+        // $("#list").prepend("<li>grey</li>")
+        // $("#list").after("<li>levender</li>")
+        // $("#list").before("<li>blue</li>")
+        // $("#list").empty();  // remove all the children tag/elements
+        // $("#list").remove();  // delete the complete parent tag/elements
+
+        // $("#btn").click(function(){
+        //     $("#box").addClass("circle");
+        // });
+
+        // $("#btn").click(function(){
+        //     $("#box").removeClass("red");
+        // });
+
+        // $("#btn").click(function(){
+        //     $("#box").toggleClass("red");
+        // });
+
+        // $("#btn").click(function(){
+        //     var css = $("#box").css("background-color");  //from this method we can fetch the css property
+        //     alert(css);
+        //     console(css);
+        // });
+
+        // $("#btn").click(function () {
+        //     var data = $("#box").width();   // width ki jagah height likh denge toh height ka data aayga
+        //     alert(data);                    // this is normal height and width of the container
+        // });
+
+        // $("#btn").click(function () {
+        //     var data = $("#box").innerWidth();  // this includes the of  height and width along with padding given of the container
+        //     alert(data);
+        // });
+
+        // $("#btn").click(function () {
+        //     var data = $("#box").outerWidth();  // this includes the of  height and width along with padding given and also border of the container
+        //     alert(data);
+        // });
+
+        // $("#btn").click(function () {
+        //     var data = $("#box").outerWidth(true);  // this includes the of  height and width along with padding given , border and the margin given of the container
+        //     alert(data);
+        // });
+
+        // var element = $("#span1").parent();      // this select the parent of selected tag/element
+        // element.css({
+        //     "background-color":"grey",
+        //     "color":"white"
+        // });
+
+        // var element = $("#span1").parents();        // this select the grandparent of selected tag/element
+        // element.css("border","1px solid red");
+
+        // var element = $("#span1").parentsUntil("body");  // this select the grandparent till you give in brackets of selected tag/element
+        // element.css("border","1px solid red");
+
+        // var element = $("ul").children();          //this select all the child of the selected tag   
+        // element.css("border","1px solid red");
+
+        // var element = $("#span2").siblings();          // this select all the siblings of the selected tag   
+        // element.css("border","1px solid red");
+
+        // var element = $("ul").find("#span1");          // this select the tag which you gives in find inside the selected tag   
+        // element.css("border","1px solid red");
+
+        // $.noConflict();  // if any other framework or library also use dollar then we put $.noConflict() at top and then we can simply use jQuery instead of $
+
+        // jQuery("#btn1").click(() => {
+        //     jQuery("#para").text("text changed");
+        // });
+
+    </script>
+</body>
+
+</html>
